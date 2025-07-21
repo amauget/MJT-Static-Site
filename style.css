@@ -1,0 +1,127 @@
+ :root, body{
+        padding: 0;
+        margin: 0;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid black;
+
+    }
+        .logo{
+            height: 10vh;
+            margin: 1vh 1vw;
+        }
+        .linkContainer{
+            display: grid;
+            grid-template-columns: repeat(5, 10vw);
+            grid-template-rows: 10vh;
+            gap: 2vw;
+            align-items: center;
+        }
+            .headerLink{
+                text-decoration: none;
+                color: rgb(59, 59, 59);
+                font-size: 1.2rem;
+                
+
+            }
+    .summaryContainer{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: repeat(3, fit-content);
+        color:white;
+        margin-top: 15vh;
+        background-color:#071b5a;
+            padding: 10vh 0;
+
+    }
+        .mjtHeader, .summary, .readMore{
+            grid-column: 2/3;
+            
+        }
+        .mjtHeader{
+            grid-row: 1/2;
+            font-size: 2.7rem;
+        }
+        .summary{
+            grid-row: 2/3;
+            font-size: 1.15rem;
+        }
+        .readMore{
+            grid-row: 3/4;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            border: solid white 1px;
+            border-radius: 25px;
+            font-size: 1.3rem;
+
+            padding: 3vh 3vw;
+            width: fit-content;
+            align-self: center;
+            margin-bottom: 1vh;
+        }
+.whoContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 15vh);
+    justify-content: center;
+    margin-top: 10vh;
+    color: rgb(109, 109, 109)
+}
+    .tools{
+        grid-column:2/4;
+        justify-self: center;
+        
+    }
+    .whoTitle{
+        grid-column: 2/4;
+        font-size: 2.3rem;
+        justify-self: center;
+    }
+    .whoSummary{
+        grid-column: 1/5;
+        justify-self: center;
+        text-align: center;
+        font-size: 1.15rem;
+        max-width: 70vw;
+    }
+    .ourCompanyContainer{
+        grid-column: 1/3;
+        justify-self: center;
+        color:black;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+        .clover, .ourCompanyHeader, .commitment{
+            justify-self: center;
+        }
+        .ourCompanyHeader{
+            font-size: 2rem;
+        }
+        .commitment{
+            font-size: 1.1rem;
+            text-align: center;
+            max-width: 35vw;
+        }
+
+    .whatWeDoContainer{
+        grid-column: 3/5;
+        justify-self: center;
+        color:black;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+        .building, .whatWeDoHeader, .whatWeDo{
+            justify-self: center;
+        }
+        .whatWeDoHeader{
+            font-size: 2rem;
+        }
+        .whatWeDo{
+            font-size: 1.1rem;
+            text-align: center;
+            max-width: 35vw;
+
+        }
